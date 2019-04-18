@@ -1,0 +1,39 @@
+show dbs
+show dbs
+use school
+show dbs
+db.students.insert( {)    "1" : {     "id": 1,     "name": "John",     "age": 25,     "alergies": ["grass", "nuts", "oxygen", "squid"],     "classes": [       {"name": "math", "grade": "f"},        {"name": "cheese making", "grade": "p"}       ]    }  })
+db.students.insert( {    "1" : {     "id": 1,     "name": "John",     "age": 25,     "alergies": ["grass", "nuts", "oxygen", "squid"],     "classes": [       {"name": "math", "grade": "f"},        {"name": "cheese making", "grade": "p"}       ]    }  })
+show dbs
+show collections
+db.students.find()
+db.studetns.insert({"name": "peter", "favoriteInstructor": "Nima"})
+db.students.insert({"career": true})
+db.students.find()
+db.students.find().pretty()
+show collections
+db.students.insert({"name": "peter", "favoriteInstructor": "Nima"})
+db.students.find().pretty()
+db.studetns.remove()
+db.studetns.remove({"favoriteInstructor": "Nima"})
+db.studetns.find()
+\
+db.studetns.find()
+db.students.find().pretty()
+db.students.find()
+db.students.find({"career": true}|)
+db.students.find({"career": true})
+db.students.findOne()
+show dbs
+db.students.find()
+db.students.find().pretty()
+db.students.find({"alergies": 25}).pretty()
+db.students.find({"alergies": "25"}).pretty()
+db.students.find({"name": /*a*/}).pretty()
+db.students.find({"name": /*+a*+/}).pretty()
+db.students.find({"name": /.a./}).pretty()
+db.students.find({"name": /a/}).pretty()
+db.students.find({"name": /g/}).pretty()
+db.students.find({"name": /ag/}).pretty()
+db.students.find({"name": /a/g}).pretty()
+db.students.find({"teacher": /a/g}).pretty()
